@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>algosceres</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="description" content="Kişisel profil sayfası" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="enter-screen" id="enter-screen">
+    <div class="enter-content">
+      <div class="enter-text">CLICK TO ENTER</div>
+      <div class="enter-hint">tap anywhere to play</div>
+    </div>
+  </div>
+
+  <div class="bg-video-wrap">
+    <video id="bg-video" autoplay muted loop playsinline>
+      <source src="https://file.garden/armsp9OlWnvDT9Zs/xxx" type="video/mp4" />
+    </video>
+    <div class="bg-overlay"></div>
+  </div>
+
+  <main class="card-wrapper">
+    <div class="card" id="profile-card">
+
+      <div class="banner" id="banner">
+        <div class="banner-shimmer"></div>
+      </div>
+
+      <div class="avatar-wrap">
+        <img class="avatar" id="avatar" src="" alt="avatar" />
+        <span class="status-dot" id="status-dot"></span>
+      </div>
+
+      <div class="info">
+        <div class="name-row">
+          <h1 class="display-name" id="display-name">algosceres</h1>
+          <span class="username-badge" id="username-badge">@algosceres</span>
+        </div>
+        <p class="bio" id="bio">twizzy</p>
+      </div>
+
+      <div class="player" id="player">
+        <div class="vol-wrap">
+          <i class="bi bi-volume-up-fill vol-icon" id="vol-icon"></i>
+          <span class="vol-label" id="vol-label">30%</span>
+          <input type="range" id="volume" min="0" max="100" value="30" aria-label="Ses" />
+        </div>
+        <audio id="audio" src="xxx.mp3" preload="auto" loop></audio>
+      </div>
+
+      <div class="social" id="social-links">
+        <span class="social-item" data-tooltip="batuhanoncrack"
+          onclick="window.open('https://www.youtube.com/@batuhanoncrack', '_blank')">
+          <i class="bi bi-youtube"></i>
+        </span>
+        <span class="social-item" data-tooltip="batuhanoncrack"
+          onclick="window.open('https://twitter.com/batuhanoncrack', '_blank')">
+          <i class="bi bi-twitter-x"></i>
+        </span>
+        <span class="social-item" data-tooltip="ErenM"
+          onclick="window.open('https://steamcommunity.com/profiles/76561198975377615/', '_blank')">
+          <i class="bi bi-steam"></i>
+        </span>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
